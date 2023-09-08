@@ -27,16 +27,16 @@
 function addScope(a, b) {
 
   let numbers = null;
-  let length = 0;
+  let length = b > a ? (b - a) : (a - b);
+
+
 
   if (b > a) {
-    length = b - a;
     for (let i = 0; i < length -1; i++) {
       a = a + 1;
       numbers += a;
     }
     } else if (a > b) {
-    length = a - b;
     for (let i = 0; i < length -1; i++) {
       b = b + 1;
       numbers += b;
